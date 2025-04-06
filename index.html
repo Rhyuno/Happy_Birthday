@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- External Libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <!-- Our combined CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- jQuery for second page (envelope animation) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <!-- Page 1: Cake with Candles -->
+  <div id="page1">
+    <div class="candle-count-display">
+      Candles on the Cake: <span id="candleCount">0</span>
+    </div>
+    <div class="cake">
+      <div class="plate"></div>
+      <div class="layer layer-bottom"></div>
+      <div class="layer layer-middle"></div>
+      <div class="layer layer-top"></div>
+      <div class="icing"></div>
+      <div class="drip drip1"></div>
+      <div class="drip drip2"></div>
+      <div class="drip drip3"></div>
+      <!-- Next Button, hidden initially -->
+      <button class="next-button" id="nextButton" style="display: none;">Next</button>
+    </div>
+  </div>
+
+  <!-- Page 2: Envelope and Letter (initially hidden) -->
+  <div id="page2" style="display: none;">
+    <div class="envlope-wrapper">
+      <div id="envelope" class="close">
+        <div class="front flap"></div>
+        <div class="front pocket"></div>
+        <div class="letter">
+          <div class="words line1"></div>
+          <div class="words line2"></div>
+          <div class="words line3"></div>
+          <div class="words line4"></div>
+        </div>
+        <div class="hearts">
+          <div class="heart a1"></div>
+          <div class="heart a2"></div>
+          <div class="heart a3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Our combined JS -->
+  <script src="script.js"></script>
+</body>
+</html>
